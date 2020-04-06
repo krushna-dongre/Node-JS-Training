@@ -1,0 +1,6 @@
+--- Generating Fresh Output file ----
+demo/demo-1/file-1-1	-[MD5]-> e90f25e90f20cb16abaabc0247ba3da6 -[SHA1]-> 6798fecf7897b66252de3ee4e03bf59c880bbb59
+demo/demo-1/file-1-2	-[MD5]-> cd548bf0b87a790cfaca98f00eeb1d2e -[SHA1]-> bd379ad793178b6aa2e6a1101a843bd96a20dd62
+demo/file-1	-[MD5]-> 7b81992dbca99fda95ce17fb476bddce -[SHA1]-> daaab3192d885b79c5beea9fe13380c8e143b6cc
+demo/file-2	-[MD5]-> eb70789f6320fb923ecd5dd1dc67935b -[SHA1]-> af151f766caf4f406a3b07d7125d80801ce37236
+demo/file-3	-[MD5]-> b75a371656cf4e012fa5196c99bc8fb3 -[SHA1]-> a7f3b74e9b8b465238cfb37c695a6690d6fa0fea
