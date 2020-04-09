@@ -2,11 +2,14 @@ const fs = require("fs");
 const crypto = require("crypto");
 const argv = process.argv.slice(2);
 const input = argv[0];
+const pathLib = require("path");
+
 fs.writeFileSync("output.txt", "--- Generating Fresh Output file ----\n");
+
 if (input != null) {
   const stat = fs.statSync(input);
   if (stat.isDirectory()) {
-    readdirectory(input);
+    readDirectory(input);
   } else {
     console.log("Not a directory");
   }
@@ -14,12 +17,12 @@ if (input != null) {
   console.log("No input");
 }
 
-function readdirectory(dirName) {
+function readDirectory(dirName) {
   const dir = fs.readdirSync(dirName);
-  dir.forEach(async function(dirent) {
-    const path = dirName + "/" + dirent;
+  dir.forEach(async function (dirent) {
+    const path = pathLib.join(dirName, dirent);
     if (fs.statSync(path).isDirectory()) {
-      readdirectory(path);
+      readDirectory(path);
     } else {
       let output =
         path +
@@ -28,7 +31,7 @@ function readdirectory(dirName) {
         " -[SHA1]-> " +
         calculateHash(path, "sha1") +
         "\n";
-      writtingoutputfile(output);
+      await writtingOutputFile(output);
     }
   });
 }
@@ -40,6 +43,6 @@ function calculateHash(filePath, algorithm) {
   return sum.digest("hex");
 }
 
-async function writtingoutputfile(data) {
+async function writtingOutputFile(data) {
   fs.appendFileSync("output.txt", data);
 }
