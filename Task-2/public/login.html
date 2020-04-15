@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <a href='index.html'><img src="images/fb.png" alt="Facebook" id="logo" /></a>
+            </div>
+        </header>
+        <hr>
+        <h2>Hello, Login with your credentials</h2>
+        <div class="text-center border border-light p-5 flex-login">
+
+            <p class="h4 mb-4">Sign in</p>
+
+            <!-- Username -->
+            <input type="text" id="FormUsername" class="form-control mb-4" placeholder="Username">
+
+            <!-- Password -->
+            <input type="password" id="FormPassword" class="form-control mb-4" placeholder="Password">
+
+            <!-- Sign in button -->
+            <button type="button" onclick="login()" class="btn btn-primary button-size" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                Log in
+            </button>
+        </div>
+    </div>
+    <script src='./javascripts/login.js'></script>
+</body>
+
+</html>
