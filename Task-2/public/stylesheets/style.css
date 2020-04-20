@@ -1,0 +1,51 @@
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  height: fit-content;
+  justify-content: space-between;
+}
+.button-size {
+  height: 40px;
+  width: 100px;
+  margin-top: 15px;
+}
+.profile-btn-div {
+  display: flex;
+  justify-content: center;
+}
+.profile-button-size {
+  height: 40px;
+  width: 200px;
+  margin-top: 190px;
+}
+
+#logo {
+  height: 70px;
+  width: 70px;
+}
+
+.flex-login {
+  margin: 40px auto;
+  height: 330px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(172, 172, 168, 0.233);
+}
+.share-bn-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  margin-bottom: 10px;
+}
+.card {
+  margin-bottom: 20px;
+}
+.shadow-textarea textarea.form-control::placeholder {
+  font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+  padding-left: 0.8rem;
+}

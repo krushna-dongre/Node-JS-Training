@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>profile</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <a href='index.html'><img src="images/fb.png" alt="Facebook" id="logo" /></a>
+                <h4 id='email'></h4>
+                <button onclick='logout()' class="btn btn-primary button-size" data-toggle="button" aria-pressed="false"
+                    autocomplete="off">
+                    Log out
+                </button>
+            </div>
+        </header>
+        <hr>
+        <h2 id='username'></h2>
+        <div class="form-group shadow-textarea" id='newPostArea'>
+            <label for="exampleFormControlTextarea6">Create new post</label>
+            <textarea class="form-control z-depth-1" id="postTextarea" rows="3"
+                placeholder="Write something here..."></textarea>
+        </div>
+        <div class="share-bn-flex">
+            <button class="btn btn-primary button-size " onclick="submitPost()" data-toggle="button"
+                aria-pressed="false" autocomplete="off">
+                Share
+            </button>
+            <hr>
+        </div>
+
+        <div id="details">
+
+        </div>
+
+        <div class="share-bn-flex">
+            <a href='index.html' class="btn btn-primary profile-button-size " data-toggle="button" aria-pressed="false"
+                autocomplete="off">
+                Home Page
+            </a>
+            <hr>
+        </div>
+    </div>
+    <script src='./javascripts/profile.js'></script>
+    <script>
+        getPosts();
+    </script>
+</body>
+
+</html>
